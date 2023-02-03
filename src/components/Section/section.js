@@ -2,12 +2,13 @@ import movies from "../movieArray/moviesArray.js";
 import { useState } from "react";
 import { Card } from "../card/card.js";
 import { Poster } from "../Poster/poster.js";
+import "../Section/mainCss.css";
 
 export function Section() {
   const [poster, setPoster] = useState(" ");
 
   return movies.map((movie, index) => (
-    <div key={index}>
+    <div className="main" key={index}>
       <Card
         title={movie.original_title}
         description={movie.overview}
@@ -18,7 +19,6 @@ export function Section() {
           image={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
         />
       )}
-      ;
     </div>
   ));
 }
