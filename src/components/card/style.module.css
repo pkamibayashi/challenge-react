@@ -1,0 +1,20 @@
+.card {
+  background-color: rgb(84, 84, 185);
+  color: white;
+  display: flex;
+  border-radius: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 35vh;
+  width: 80vw;
+  gap: 2rem;
+}
+
+.card > h1 {
+  font-size: 3rem;
+}
+
+.card > p {
+  font-size: 1.5rem;
+}
